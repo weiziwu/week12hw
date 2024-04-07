@@ -1,0 +1,28 @@
+---
+title: "week12hw"
+author: Weizi Wu
+format: pdf
+editor: visual
+---
+
+## Using LaTeX
+
+```{=tex}
+\begin{figure}[ht]
+            \begin{center}
+                  \includegraphics{R_image}
+            \end{center}
+      \caption{An Example Figure in LaTeX}
+      {\scriptsize}
+      \label{ExampleLaTeXFigure}
+\end{figure}
+```
+## Using Markdown
+
+![](images/R_image.png)
+
+## Using HTML
+
+![](images/R_image.png)
+
+</img>
