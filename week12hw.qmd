@@ -23,6 +23,59 @@ editor: visual
 
 ## Using HTML
 
+## </img>
+
 ![](images/R_image.png)
 
-</img>
+## 
+
+## URL
+
+```{r}
+# Define the URL of the image
+url <- "https://github.com/weiziwu/week12hw/raw/main/R_image.png"
+
+# Define the file name for saving the image
+file_name <- "R_image.png"
+
+# Download the image from the URL
+download.file(url, destfile = file_name, mode = "wb")
+# Show the downloaded image
+knitr::include_graphics("R_image.png")
+
+```
+
+### ggplot2 figure
+
+```{r}
+library(ggplot2)
+
+# Create plot
+
+# Create a ggplot object using mtcars dataset
+p <- ggplot(mtcars, aes(x = mpg, y = wt)) +
+  geom_point() +  
+  labs(title = "Scatter plot of MPG vs. Weight",  
+       x = "Miles per Gallon (mpg)",  
+       y = "Weight (1000 lbs)")      
+
+# Print the plot
+print(p)
+
+
+```
+
+```{=tex}
+\begin{figure}[ht]
+```
+```{=tex}
+ \caption{Example Scatter plot of mtcars Created with
+      \emph{ggplot2}} \label{ggplot2Line}
+```
+```{=tex}
+\begin{center}
+```
+```{=tex}
+  \end{center} 
+\end{figure}
+```
